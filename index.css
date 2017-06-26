@@ -1,0 +1,22 @@
+*{padding:0;margin:0;}
+body{background-color:black;overflow:hidden;}
+#perspective{
+    perspective: 800px;/*景深  视角*/
+}
+#wrap{
+    position: relative;
+    width: 100px;
+    height:200px;
+    margin: 150px auto;
+    border: 0 solid pink;
+    transform-style: preserve-3d;/*3d场景打造*/
+    transform: rotateX(-20deg);
+}
+#wrap img{
+    border-radius: 8px;
+    border: 1px solid gainsboro;
+    padding:8px;
+    position: absolute;
+    top:0;
+    -webkit-box-reflect: below 5px -webkit-linear-gradient(top ,rgba(0,0,0,0) 40%,rgba(0,0,0,.5) 100%);
+}
